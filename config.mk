@@ -61,3 +61,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 # OTA
 PRODUCT_PACKAGES += \
     UpdaterOverlay
+
+# Navigation bar IME space overlayAdd commentMore actions
+PRODUCT_PACKAGES += \
+    NavigationBarModeGesturalOverlayNarrowSpace \
+    NavigationBarModeGesturalOverlayNoSpace
