@@ -38,17 +38,6 @@ PRODUCT_PACKAGES += \
     FontRubik \
     FontVictor
 
-# Lockscreen Clock Styles
-PRODUCT_PACKAGES += \
-    SystemUIClocks-BigNum \
-    SystemUIClocks-Calligraphy \
-    SystemUIClocks-Flex \
-    SystemUIClocks-Growth \
-    SystemUIClocks-Inflate \
-    SystemUIClocks-Metro \
-    SystemUIClocks-NumOverlap \
-    SystemUIClocks-Weather
-
 # Launcher
 PRODUCT_PACKAGES += \
     ThemedIconsOverlay
