@@ -39,8 +39,3 @@ PRODUCT_COPY_FILES += \
     $(AUDIO_PATH)/ui/Lock.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Lock.ogg \
     $(AUDIO_PATH)/ui/LowBattery.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/LowBattery.ogg \
     $(AUDIO_PATH)/ui/Unlock.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Unlock.ogg
-
-# Set default ringtone and notification sound
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.notification_sound=Brightside.ogg \
-    ro.config.ringtone=Sticks.ogg

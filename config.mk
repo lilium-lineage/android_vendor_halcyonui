@@ -18,9 +18,6 @@ LOCAL_PATH := $(call my-dir)
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-# Boot Animation
-$(call inherit-product, vendor/halcyonui/bootanimation/bootanimation.mk)
-
 # Include Halcyon audio cOnfig
 include vendor/halcyonui/media/audio/audio.mk
 
@@ -41,71 +38,19 @@ PRODUCT_PACKAGES += \
     FontRubik \
     FontVictor
 
-# Icon Packs
-PRODUCT_PACKAGES += \
-    IconPackCircularAndroidOverlay \
-    IconPackCircularLauncherOverlay \
-    IconPackCircularSettingsOverlay \
-    IconPackCircularSystemUIOverlay \
-    IconPackCircularThemePickerOverlay \
-    IconPackVictorAndroidOverlay \
-    IconPackVictorLauncherOverlay \
-    IconPackVictorSettingsOverlay \
-    IconPackVictorSystemUIOverlay \
-    IconPackVictorThemePickerOverlay \
-    IconPackSamAndroidOverlay \
-    IconPackSamLauncherOverlay \
-    IconPackSamSettingsOverlay \
-    IconPackSamSystemUIOverlay \
-    IconPackSamThemePickerOverlay \
-    IconPackKaiAndroidOverlay \
-    IconPackKaiLauncherOverlay \
-    IconPackKaiSettingsOverlay \
-    IconPackKaiSystemUIOverlay \
-    IconPackKaiThemePickerOverlay \
-    IconPackFilledAndroidOverlay \
-    IconPackFilledLauncherOverlay \
-    IconPackFilledSettingsOverlay \
-    IconPackFilledSystemUIOverlay \
-    IconPackFilledThemePickerOverlay \
-    IconPackRoundedAndroidOverlay \
-    IconPackRoundedLauncherOverlay \
-    IconPackRoundedSettingsOverlay \
-    IconPackRoundedSystemUIOverlay \
-    IconPackRoundedThemePickerOverlay \
-    IconPackOxygenAndroidOverlay \
-    IconPackOxygenLauncherOverlay \
-    IconPackOxygenSettingsOverlay \
-    IconPackOxygenSystemUIOverlay \
-    IconPackOxygenThemePickerOverlay \
-    IconPackOutlineAndroidOverlay \
-    IconPackOutlineSettingsOverlay \
-    IconPackOutlineSystemUIOverlay
-
-PRODUCT_PACKAGES += \
-    IconShapeRoundedRectOverlay \
-    IconShapeSquareOverlay \
-    IconShapeSquircleOverlay \
-    IconShapeTeardropOverlay
-
 # Lockscreen Clock Styles
 PRODUCT_PACKAGES += \
-     SystemUIClocks-BigNum \
-     SystemUIClocks-Calligraphy \
-     SystemUIClocks-Flex \
-     SystemUIClocks-Growth \
-     SystemUIClocks-Inflate \
-     SystemUIClocks-Metro \
-     SystemUIClocks-NumOverlap \
-     SystemUIClocks-Weather
-     
-# Navigation Bar
-PRODUCT_PACKAGES += \
-    ImmersiveNavigationOverlay
+    SystemUIClocks-BigNum \
+    SystemUIClocks-Calligraphy \
+    SystemUIClocks-Flex \
+    SystemUIClocks-Growth \
+    SystemUIClocks-Inflate \
+    SystemUIClocks-Metro \
+    SystemUIClocks-NumOverlap \
+    SystemUIClocks-Weather
 
-# Nest Launcher
+# Launcher
 PRODUCT_PACKAGES += \
-    NestQuickStep \
     ThemedIconsOverlay
 
 # Overlays
@@ -118,11 +63,3 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images \
     product_charger_res_images_vendor
-
-# Theme
-PRODUCT_PACKAGES += \
-    HalcyonBlackTheme
-
-# Theme Picker
-PRODUCT_PACKAGES += \
-    ThemePicker
